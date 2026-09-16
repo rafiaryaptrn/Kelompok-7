@@ -1,0 +1,56 @@
+DECLARE PinBenar : STRING
+DECLARE PinInput : STRING
+DECLARE Saldo : REAL
+DECLARE Setor : REAL
+DECLARE Tarik : REAL
+DECLARE Pilihan : INTEGER
+
+PinBenar <- "123456"
+Saldo <- 0.0
+
+//Repeat (ngulang)
+REPEAT
+OUTPUT "Masukkan PIN:"
+INPUT PinInput
+IF PinInput <> PinBenar THEN
+          OUTPUT "PIN salah"
+   ENDIF   
+UNTIL PinInput = PinBenar 
+//Repeat (ngulang)
+
+//opsi 
+    WHILE Pilihan <> 4 DO
+        OUTPUT "1. Saldo Anda"
+        OUTPUT "2. Masukkan jumlah setor"
+        OUTPUT "3. Tarik Tunai"
+        OUTPUT "4. Keluar"
+        OUTPUT "Choose menu: "
+        INPUT Pilihan
+//opsi 
+
+        IF Pilihan = 1 THEN
+            OUTPUT "Saldo Anda: ", Saldo
+        ENDIF
+        
+        IF Pilihan = 2 THEN
+            OUTPUT "Masukkan jumlah setor: "
+            INPUT Setor
+            Saldo <- Saldo + Setor
+            OUTPUT "Saldo Anda sekarang: ", Saldo
+        ENDIF
+        
+        IF Pilihan = 3 THEN
+            OUTPUT "Masukkan jumlah tarik: "
+            INPUT Tarik
+            IF Tarik > Saldo THEN
+                OUTPUT "Saldo tidak cukup."
+            ELSE
+                Saldo <- Saldo - Tarik
+                OUTPUT "Saldo Anda sekarang: ", Saldo
+            ENDIF
+        ENDIF        
+        IF Pilihan = 4 THEN
+            OUTPUT "Terima kasih!"
+        ENDIF    
+ENDWHILE
+
