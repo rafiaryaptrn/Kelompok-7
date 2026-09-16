@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-16 05:57:09 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtOVQ3STRWMEQ7MjAyNi0wOS0xNjswOToyOToyNCBBTTsyNjI5"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtOVQ3STRWMEQ7MjAyNi0wOS0xNjswNTo1NzowOSBQTTszOzI3NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pin, pinbenar, percobaan, setortunai, pilihan, tariktunai, keluar" type="Integer" array="False" size=""/>
+            <declare name="jumlahtarik, jumlahsetor, saldo, ceksaldo" type="Real" array="False" size=""/>
+            <input variable="pin"/>
+            <assign variable="pinbenar" expression="123456"/>
+            <if expression="pin = 123456">
+                <then>
+                    <output expression="&quot;Pin Benar, Selamat Datang&quot;" newline="True"/>
+                    <assign variable="pilihan" expression="0"/>
+                    <while expression="pilihan &lt;&gt; 5">
+                        <input variable="pilihan"/>
+                        <if expression="pilihan = 1">
+                            <then>
+                                <output expression="&quot;Cek Saldo&quot;" newline="True"/>
+                                <assign variable="pilihan" expression="1"/>
+                                <while expression="pilihan &lt;&gt; 5">
+                                    <input variable="pilihan"/>
+                                    <if expression="pilihan = 1">
+                                        <then>
+                                            <output expression="&quot;Saldo Anda:&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                    <if expression="pilihan = 2">
+                                        <then>
+                                            <output expression="&quot;Setor Tunai&quot;" newline="True"/>
+                                            <assign variable="pilihan" expression="2"/>
+                                            <while expression="pilihan &lt;&gt; 5">
+                                                <input variable="pilihan"/>
+                                                <if expression="pilihan = 2">
+                                                    <then>
+                                                        <output expression="&quot;Masukkan jumlah setor&quot;" newline="True"/>
+                                                        <input variable="jumlahsetor"/>
+                                                        <assign variable="saldo" expression="0"/>
+                                                        <assign variable="saldo" expression="saldo + jumlahsetor"/>
+                                                        <output expression="&quot;Setor Berhasil. Saldo Sekarang: &quot;" newline="True"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                                <if expression="pilihan = 3">
+                                                    <then>
+                                                        <output expression="&quot;Tarik Tunai&quot;" newline="True"/>
+                                                        <assign variable="pilihan" expression="3"/>
+                                                        <while expression="pilihan &lt;&gt; 5">
+                                                            <input variable="pilihan"/>
+                                                            <if expression="pilihan = 3">
+                                                                <then>
+                                                                    <output expression="&quot;Masukkan jumlah tarik: &quot;" newline="True"/>
+                                                                    <input variable="jumlahtarik"/>
+                                                                    <if expression="jumlahtarik &gt; saldo">
+                                                                        <then>
+                                                                            <output expression="&quot;Saldo Tidak Cukup!&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <assign variable="saldo" expression="saldo - jumlahtarik"/>
+                                                                            <output expression="&quot;Penarikan Berhasil. Saldo Sekarang: &quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                            <if expression="pilihan = 4">
+                                                                <then>
+                                                                    <output expression="&quot;Keluar&quot;" newline="True"/>
+                                                                    <assign variable="pilihan" expression="4"/>
+                                                                    <while expression="pilihan &lt;&gt; 5">
+                                                                        <input variable="pilihan"/>
+                                                                        <if expression="pilihan = 4">
+                                                                            <then>
+                                                                                <output expression="&quot;Pilih Menu: &quot;" newline="True"/>
+                                                                            </then>
+                                                                            <else/>
+                                                                        </if>
+                                                                    </while>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </while>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </while>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </while>
+                            </then>
+                            <else/>
+                        </if>
+                    </while>
+                </then>
+                <else>
+                    <output expression="&quot;Pin Salah, Silahkan Coba Lagi&quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+            <output expression="&quot;Terima kasih telah menggunakan ATM ini. &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
