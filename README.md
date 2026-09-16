@@ -84,7 +84,7 @@ The program displays:
 
 The algorithm used in the program is described in:
 
-`pseudocode.txt`
+[Pseudocode in accordance to Cambridge Pseudocode.Txt]
 
 ---
 
