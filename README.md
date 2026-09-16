@@ -92,8 +92,8 @@ The algorithm used in the program is described in:
 
 The flowchart is created using Flowgorithm.
 
-File: [./https://github.com/rafiaryaptrn/Kelompok-7/blob/d9df5583093ca7541261781e129a724d1e5b6bd7/Progress%20Flowchart%20kel%207%20LPP%20Part%201.fprg]
-
+File 1: [./https://github.com/rafiaryaptrn/Kelompok-7/blob/d9df5583093ca7541261781e129a724d1e5b6bd7/Progress%20Flowchart%20kel%207%20LPP%20Part%201.fprg]
+file 2: [./https://github.com/rafiaryaptrn/Kelompok-7/blob/6b26ffcdaae847820864062cfb174617cd27a9a1/Progress%20Flowchart%20kel%207%20LPP%20Part%202.fprg]
 
 `flowchart.fprg`
 
