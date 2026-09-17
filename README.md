@@ -1,5 +1,3 @@
-# Kelompok-7
-
 # Mini Programming Project
 
 ## 1. Group Information
