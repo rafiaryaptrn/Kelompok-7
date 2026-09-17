@@ -95,8 +95,6 @@ The flowchart is created using Flowgorithm.
 
 File 1:
 
----
- [./https://github.com/rafiaryaptrn/Kelompok-7/blob/d9df5583093ca7541261781e129a724d1e5b6bd7/Progress%20Flowchart%20kel%207%20LPP%20Part%201.fprg]
 
 File 2:
 
