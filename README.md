@@ -22,9 +22,9 @@
 
 ---
 
-## 2. Simple ATM Simulator
+## 2. Project Title
 
-Number Guessing Game
+Simple ATM Simulator
 
 ---
 
@@ -122,5 +122,50 @@ The JavaScript implementation of the program is available in:
 The program is tested using several test scenarios.
 
 Testing documentation:
+
+# Testing
+
+## Test Case 1
+
+**Input:**  
+Guess = XX
+
+**Expected Output:**  
+"XXX"
+
+**Actual Output:**  
+"XXX"
+
+**Status:** XXX
+
+---
+
+## Test Case 2
+
+**Input:**  
+Guess = XX
+
+**Expected Output:**  
+"XXX"
+
+**Actual Output:**  
+"XXX"
+
+**Status:** XXX
+
+---
+
+## Test Case 3
+
+**Input:**  
+Guess = XXX
+
+**Expected Output:**  
+"XXXX"
+
+**Actual Output:**  
+"XXX"
+
+**Status:** XXX
 
 `test-cases.md`
