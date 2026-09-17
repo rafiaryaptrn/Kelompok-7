@@ -40,11 +40,11 @@ This project is designed to apply the following programming concepts:
 
 - Variables
 - Data types
-- Operators
-- Conditional statements
-- Loops
+- Operators (Arithmetic)
+- Conditional statements (if/else)
+- Switch statements
+- Loops (While)
 - Algorithms
-- JavaScript
 
 ---
 
@@ -63,12 +63,12 @@ The program receives:
 
 The program displays the ATM menu repeatedly until the user chooses "Keluar". Based on the selected menu:
 
-- Cek Saldo → the program shows the current balance
-- Setor Uang → the program adds the input amount to the balance
-- Tarik Uang → the program checks if the balance is sufficient:
+- ***Cek Saldo*** → the program shows the current balance
+- ***Setor Uang*** → the program adds the input amount to the balance
+- ***Tarik Uang*** → the program checks if the balance is sufficient:
  If insufficient → shows an error message
  If sufficient → subtracts the amount from the balance
-- Keluar → the loop ends and the final balance is displayed
+- ***Keluar*** → the loop ends and the final balance is displayed
   
 ---
 
@@ -78,7 +78,7 @@ The program displays:
 
 - The ATM menu options
 - The current balance after each transaction
--Success or error messages for deposit/withdrawal
+- Success or error messages for deposit/withdrawal
 - The final balance before the program ends
   
 ---
