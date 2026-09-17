@@ -123,9 +123,7 @@ The program is tested using several test scenarios.
 
 Testing documentation:
 
-# Testing
-
-## Test Case 1
+### Test Case 1
 
 **Input:**  
 Guess = XX
@@ -140,7 +138,7 @@ Guess = XX
 
 ---
 
-## Test Case 2
+### Test Case 2
 
 **Input:**  
 Guess = XX
@@ -155,7 +153,7 @@ Guess = XX
 
 ---
 
-## Test Case 3
+### Test Case 3
 
 **Input:**  
 Guess = XXX
