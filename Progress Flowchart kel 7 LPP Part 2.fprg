@@ -4,20 +4,22 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-09-16 05:57:09 PM"/>
+        <attribute name="saved" value="2026-09-17 10:13:02 AM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtOVQ3STRWMEQ7MjAyNi0wOS0xNjswOToyOToyNCBBTTsyNjI5"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtOVQ3STRWMEQ7MjAyNi0wOS0xNjswNTo1NzowOSBQTTszOzI3NTQ="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtOVQ3STRWMEQ7MjAyNi0wOS0xNzsxMDoxMzowMiBBTTs1OzI3MjM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="pin, pinbenar, percobaan, setortunai, pilihan, tariktunai, keluar" type="Integer" array="False" size=""/>
+            <declare name="pin, pinbenar, setortunai, pilihan, tariktunai, keluar" type="Integer" array="False" size=""/>
             <declare name="jumlahtarik, jumlahsetor, saldo, ceksaldo" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukan pin&quot;" newline="True"/>
             <input variable="pin"/>
             <assign variable="pinbenar" expression="123456"/>
+            <assign variable="saldo" expression="500000"/>
             <if expression="pin = 123456">
                 <then>
-                    <output expression="&quot;Pin Benar, Selamat Datang&quot;" newline="True"/>
+                    <output expression="&quot;Pin Benar, Selamat Datang&#13;&#10;Tekan 1 Untuk Cek Saldo&#13;&#10;Tekan 2 Untuk Setor Tunai&#13;&#10;Tekan 3 Untuk Tarik Tunai&#13;&#10;Tekan 4 Untuk Keluar&#13;&#10;Tekan 5 Untuk Selesai&#13;&#10;Harap berurutan ya&quot;" newline="True"/>
                     <assign variable="pilihan" expression="0"/>
                     <while expression="pilihan &lt;&gt; 5">
                         <input variable="pilihan"/>
@@ -29,7 +31,7 @@
                                     <input variable="pilihan"/>
                                     <if expression="pilihan = 1">
                                         <then>
-                                            <output expression="&quot;Saldo Anda:&quot;" newline="True"/>
+                                            <output expression="&quot;Saldo Anda:500000&quot;" newline="True"/>
                                         </then>
                                         <else/>
                                     </if>
@@ -43,9 +45,8 @@
                                                     <then>
                                                         <output expression="&quot;Masukkan jumlah setor&quot;" newline="True"/>
                                                         <input variable="jumlahsetor"/>
-                                                        <assign variable="saldo" expression="0"/>
                                                         <assign variable="saldo" expression="saldo + jumlahsetor"/>
-                                                        <output expression="&quot;Setor Berhasil. Saldo Sekarang: &quot;" newline="True"/>
+                                                        <output expression="&quot;Setor Berhasil. Saldo Sekarang: &quot;&amp;saldo" newline="True"/>
                                                     </then>
                                                     <else/>
                                                 </if>
@@ -65,7 +66,7 @@
                                                                         </then>
                                                                         <else>
                                                                             <assign variable="saldo" expression="saldo - jumlahtarik"/>
-                                                                            <output expression="&quot;Penarikan Berhasil. Saldo Sekarang: &quot;" newline="True"/>
+                                                                            <output expression="&quot;Penarikan Berhasil. Saldo Sekarang: &quot;&amp;saldo" newline="True"/>
                                                                         </else>
                                                                     </if>
                                                                 </then>
