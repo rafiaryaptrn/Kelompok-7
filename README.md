@@ -85,7 +85,7 @@ The program displays:
 
 The algorithm used in the program is described in:
 
-[Pseudocode in accordance to Cambridge Pseudocode.Txt]
+[Pseudocode.Txt] (https://github.com/rafiaryaptrn/Kelompok-7/blob/6ba59a450e96b9b598cc5b038f06883132c68e39/Simple%20ATM/%5BPseudocode%20in%20accordance%20to%20Cambridge%20Pseudocode.Txt%5D)
 
 ---
 
