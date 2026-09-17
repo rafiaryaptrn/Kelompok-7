@@ -30,7 +30,7 @@ Number Guessing Game
 
 ## 3. Project Description
 
-This program is a simple game in which the player must guess a number determined by the computer.
+**Simple ATM Simulator** is a console-based JavaScript program that simulates basic ATM transactions. The program starts with an initial balance and lets the user perform multiple transactions, checking balance, depositing money, and withdrawing money until they choose to exit.
 
 ---
 
@@ -52,32 +52,35 @@ This project is designed to apply the following programming concepts:
 
 The program receives:
 
-- The player's guess
-- The number of attempts
+- The user's menu choice (1–4)
+- The deposit amount (for Setor Uang)
+- The withdrawal amount (for Tarik Uang)
+- The Exit menu (for keluar)
 
 ---
 
 ## 6. Process
 
-The program compares the player's guess with the target number.
+The program displays the ATM menu repeatedly until the user chooses "Keluar". Based on the selected menu:
 
-If the guess is:
-
-- Too high → the program provides a "too high" message
-- Too low → the program provides a "too low" message
-- Correct → the player wins
-
+- Cek Saldo → the program shows the current balance
+- Setor Uang → the program adds the input amount to the balance
+- Tarik Uang → the program checks if the balance is sufficient:
+ If insufficient → shows an error message
+ If sufficient → subtracts the amount from the balance
+- Keluar → the loop ends and the final balance is displayed
+  
 ---
 
 ## 7. Output
 
 The program displays:
 
-- The result of each guess
-- Hints or feedback
-- The number of remaining attempts
-- The final game status (win/loss)
-
+- The ATM menu options
+- The current balance after each transaction
+-Success or error messages for deposit/withdrawal
+- The final balance before the program ends
+  
 ---
 
 ## 8. Algorithm
