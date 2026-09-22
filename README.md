@@ -93,17 +93,8 @@ The algorithm used in the program is described in:
 
 The flowchart is created using Flowgorithm.
 
-File 1:
+[Flowgorithm.fprg] (https://github.com/rafiaryaptrn/Kelompok-7/blob/e488369a0bcf50c4b6a71214cec8bc29331484a1/Progress%20Flowchart%20Kel%207%20LPP%20(FIX).fprg)
 
-
-File 2:
-
----
- [./https://github.com/rafiaryaptrn/Kelompok-7/blob/6b26ffcdaae847820864062cfb174617cd27a9a1/Progress%20Flowchart%20kel%207%20LPP%20Part%202.fprg]
-
-`flowchart.fprg`
-
----
 
 ## 10. JavaScript Implementation
 
