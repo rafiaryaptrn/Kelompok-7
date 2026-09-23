@@ -100,7 +100,7 @@ The flowchart is created using Flowgorithm.
 
 The JavaScript implementation of the program is available in:
 
-`program.js`
+[ program.js ] (https://github.com/rafiaryaptrn/Kelompok-7/blob/1824a16de15a7ce6834da268c2c25f9d7c8a5760/program.js)
 
 ---
 
